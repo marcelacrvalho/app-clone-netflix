@@ -10,5 +10,7 @@ class MovieActivity : AppCompatActivity() {
         setContentView(R.layout.activity_movie)
         val toolbar: Toolbar = findViewById(R.id.t_movie)
         setSupportActionBar(toolbar)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 }
